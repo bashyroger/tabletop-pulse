@@ -1,0 +1,41 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "ignoreExportsUsedInFile": true,
+  "entry": [
+    "src/app/**/{page,layout,route,loading,error,not-found,global-error,template,default}.{ts,tsx}!",
+    "src/proxy.ts!",
+    "src/lib/supabase/{client,service,tenant-context}.ts!",
+    "src/app/actions/*.ts!",
+    "scripts/**/*.{ts,mjs,js,cjs}!",
+    "tests/**/*.test.ts!"
+  ],
+  "project": [
+    "src/**/*.{ts,tsx}!",
+    "scripts/**/*.{ts,mjs,js,cjs}!",
+    "tests/**/*.ts!"
+  ],
+  "ignore": [
+    "src/lib/supabase/database.types.ts",
+    "src/components/ui/**",
+    "src/lib/public-routes.ts",
+    "src/lib/boardgames/schemas.ts",
+    "src/lib/boardgames/types.ts",
+    ".agent/**",
+    "public/**"
+  ],
+  "ignoreDependencies": [
+    "postcss",
+    "@next/env",
+    "dotenv",
+    "@hookform/resolvers",
+    "@radix-ui/*",
+    "date-fns",
+    "next-themes",
+    "radix-ui",
+    "react-hook-form",
+    "server-only",
+    "tw-animate-css",
+    "tailwindcss"
+  ],
+  "ignoreBinaries": ["powershell"]
+}
